@@ -13,19 +13,18 @@ body {
 .top {
   height: 93px;
   background-color: #B6F2EC;
-  padding: 0 213px 0 213px;
   grid-area: first-area;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 60px;
-  text-align: center;
+  gap: 0px;
+  align-items: center;
+  justify-items: center;
   font-family: "Promt";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
 }
 .top a {
-  margin-top: 30px;
   color: #1E1E1E;
   text-decoration: none;
 }
@@ -36,13 +35,14 @@ body {
 
 .start {
   grid-area: second-area;
-  background-image: url(../app/image/c30325158148381.6386407a43543.jpg);
+  background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/c30325158148381.6386407a43543.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   padding: 106px 0 20px 0;
 }
 .start h1 {
+  color: #FEFDFE;
   font-family: "Promt";
   font-style: normal;
   font-weight: 600;
@@ -50,6 +50,8 @@ body {
   text-align: center;
 }
 .start p {
+  margin-right: 60px;
+  color: #FEFDFE;
   font-family: "Promt";
   font-style: normal;
   font-weight: 400;
@@ -60,6 +62,41 @@ body {
 
 .about {
   grid-area: third-area;
+  background-color: #3D90D9;
+  padding: 20px 216px 20px 216px;
+}
+.about .box {
+  background-color: #732666;
+  padding-top: 30px;
+  padding-bottom: 65px;
+}
+.about .box h2 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #FEFDFE;
+  font-family: "Promt";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+}
+.about .box .avatar_desc {
+  padding: 0 200px 0 200px;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  gap: 20px;
+}
+.about .box .avatar_desc .avatar {
+  width: 411px;
+  height: 411px;
+  border-radius: 100%;
+}
+.about .box .avatar_desc .desc {
+  font-family: "Promt";
+  color: #FEFDFE;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
 }
 
 .education {
