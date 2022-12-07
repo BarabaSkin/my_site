@@ -1,0 +1,89 @@
+$top_bg: #B6F2EC;
+$start_bg: #732666;
+
+$text-color: #1E1E1E;
+
+$text-font: "Promt";
+
+$width:1488px;
+
+@font-face {
+	font-family: 'Promt'; 
+	src: url(../app/fonts/Prompt-Bold.ttf); 
+}
+
+body{
+   margin: 0;
+   padding: 0;
+   display: grid;
+   grid-template-rows: 50vh, repeat(4, min-content);
+   grid-template-areas: 
+   "first-area"
+   "second-area"
+   "third-area"
+   "fourth-area"
+   "fifth-area";
+}
+
+.top{
+   height: 93px;
+   background-color: $top_bg;
+   padding: 0 213px 0 213px;
+
+   grid-area: first-area;
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   gap: 60px;
+
+   text-align: center;
+   font-family: $text-font;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 24px;  
+   
+   a{
+      margin-top: 30px;
+      color: $text-color;
+      text-decoration: none;
+   }
+   a:hover{
+      color:white;
+      text-shadow: 1px 0 2px black;
+   }
+}
+
+.start{
+   grid-area: second-area;
+   background-image: url(../app/image/c30325158148381.6386407a43543.jpg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   padding: 106px 0 20px 0;
+   h1{
+      font-family: $text-font;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 64px;
+      text-align: center;
+   }
+   p{
+      font-family: $text-font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 64px;
+      margin-top: 352px;
+      text-align: right;
+   }
+}
+
+.about{
+   grid-area: third-area;
+}
+
+.education{
+   grid-area: fourth-area;
+}
+
+.contacts{
+   grid-area: fifth-area;
+}
