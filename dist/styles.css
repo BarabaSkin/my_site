@@ -156,7 +156,7 @@ body {
 
 .contacts {
   grid-area: fifth-area;
-  background-color: var(--econtacts-bg);
+  background-color: var(--contacts-bg);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
@@ -172,6 +172,6 @@ body {
   text-decoration: none;
 }
 .contacts a:hover {
-  color: var(--about_bg)-2;
-  text-shadow: 1px 0 2px black;
+  color: var(--about-bg-2);
+  text-shadow: 1px 0 2px white;
 }
